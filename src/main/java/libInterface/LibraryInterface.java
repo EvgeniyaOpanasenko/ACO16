@@ -21,7 +21,7 @@ public interface LibraryInterface {
       11) посмотреть печатные издания конкретного года
       12) найти печатное издание по названию (ключевым словам)*/
 	
-	public Object seeAllReaders();
+	public String seeAllReaders();
 	public Object findAvalibleBooks(PrintedMedia printedMedia);
 	public boolean addPrintedMedia(PrintedMedia media);
 	public boolean addReder(String name, String secondName, Date dateOfBirth);
@@ -30,7 +30,7 @@ public interface LibraryInterface {
 	public boolean giveBookToReader(PrintedMedia printedMedia, Reader reader); // проверить наличине, не более трех книг
 	public boolean isAvaliableBook(PrintedMedia printedMedia);
 	public boolean notMoreThanThreeBooksInOneHand();
-	public Object findBookByAuthor(PrintedMedia media, Reader reader);
+	public String findBookByAuthor(PrintedMedia media, Reader reader);
 	public boolean addToBlackList(Reader reder);
 	public ArrayList <Object> findBook(PrintedMedia media);
 	

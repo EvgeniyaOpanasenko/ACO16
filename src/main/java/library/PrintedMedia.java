@@ -13,10 +13,10 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public abstract class PrintedMedia {
- public static String title;
- public static String author;
- public static int yearOfPublishing;
- public static String category; // жанр
+ public String title;
+ public String author;
+ public int yearOfPublishing;
+ public String category; // жанр
  public static int status;
  
  public ArrayList <PrintedMedia>  listOfMedia;

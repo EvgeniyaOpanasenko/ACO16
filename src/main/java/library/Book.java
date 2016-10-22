@@ -9,7 +9,7 @@ public class Book extends PrintedMedia{
 		
 	}
 	
-	public Book (PrintedMedia book, String category){
+	public Book (String title, String author, int yearOfPublishing, String category){
 		super(title, author, yearOfPublishing, category);
 		countNumberOfBooks++;
 		

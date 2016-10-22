@@ -1,4 +1,5 @@
-package library;
+package library
+;
 
 import java.io.Reader;
 import java.util.ArrayList;
@@ -7,21 +8,22 @@ import java.util.List;
 
 import libInterface.LibraryInterface;
 
-public class Library implements LibraryInterface{
-	
+public class Library implements LibraryInterface {
+	final static int BOOKS_IN_ONE_HANDS = 3;
 	List<PrintedMedia> listOfMedia = new ArrayList(); 
+	List<Reader> listOfReaders = new ArrayList(); 
 
 	public static int countOfTheSameBook = 0;
 	
-	public boolean checkIfTheSameBookInLib(PrintedMedia media){
+	public boolean checkIfTheSameBookInLib(PrintedMedia media) {
 		for (PrintedMedia m: listOfMedia)
 			if (m.equals(media));
 		return true;
 
 	}
 	@Override
-	public Object seeAllReaders() {
-		// TODO Auto-generated method stub
+	public String seeAllReaders() {
+	
 		return null;
 	}
 
@@ -76,7 +78,7 @@ public class Library implements LibraryInterface{
 	}
 
 	@Override
-	public Object findBookByAuthor(PrintedMedia media, Reader reader) {
+	public String findBookByAuthor(PrintedMedia media, Reader reader) {
 		// TODO Auto-generated method stub
 		return null;
 	}
