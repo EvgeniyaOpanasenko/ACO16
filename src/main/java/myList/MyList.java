@@ -1,0 +1,1 @@
+package myList;/** * Created by Lisa on 11/6/2016. */public interface MyList {    boolean add();}
