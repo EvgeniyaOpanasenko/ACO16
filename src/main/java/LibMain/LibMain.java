@@ -1,8 +1,9 @@
 package LibMain;
 
+import libriary.model.Reader;
+
 import java.util.ArrayList;
 
-import library.Reader;
 
 public class LibMain {
 	public static void main (String args []){
